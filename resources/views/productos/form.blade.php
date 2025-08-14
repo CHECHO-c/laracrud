@@ -14,4 +14,14 @@
     <input type="text" name="precio" class="form-control" value="{{ old('precio',$producto->precio ?? "")  }}">
 </div>
 
+<div class="mb-3">
+    <label >stock</label>
+    <input type="number" name="stock" class="form-control" value="{{ old('stock',$producto->stock ?? "")  }}">
+</div>
+
+<div class="mb-3">
+    <label >marca</label>
+    <input type="text" name="marca" class="form-control" value="{{ old('marca',$producto->marca ?? "")  }}">
+</div>
+
 <button class="btn btn-primary">Guardar</button>

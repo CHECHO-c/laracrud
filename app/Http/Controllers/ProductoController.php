@@ -41,7 +41,8 @@ class ProductoController extends Controller
     {
         $request->validate([
             "nombre"=>'required',
-            'precio'=>'required|numeric'
+            'precio'=>'required|numeric',
+            'stock'=>'required|numeric'
         ]);
 
         Producto::create($request->all());

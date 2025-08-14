@@ -12,6 +12,8 @@
             <tr>
                 <th>Nombre</th>
                 <th>Precio</th>
+                <th>Stock</th>
+                <th>Marca</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -20,6 +22,8 @@
             <tr>
                 <td>{{ $producto->nombre }}</td>
                 <td>{{ $producto->precio }}</td>
+                <td>{{ $producto->stock }}</td>
+                <td>{{ $producto->marca }}</td>
                 <td>
 
                     <a href="{{ route("productos.show", $producto) }}" class="btn btn-sm btn-info">Ver</a>
